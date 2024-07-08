@@ -103,8 +103,9 @@ nav {
 #intro h1 {
     font-size: 6rem;
     font-weight: 700;
+    padding-left: 8%;
+    padding-right: 8%;
 }
-
 #intro p {
     opacity: 75%;
 }
