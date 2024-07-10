@@ -20,7 +20,7 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="https://www.linkedin.com/in/divinewton/" class="btn" target="_blank">Connect on LinkedIn</a>
+            <a href="https://www.linkedin.com/in/divinewton/" id="linkedin-btn" class="btn" target="_blank">Connect on LinkedIn</a>
         </nav>
         <div id="intro">
             <div id="intro-text">
@@ -43,6 +43,12 @@
                     <div>
                       <span>ABOUT ME</span>
                       <span>ABOUT ME</span>
+                    </div>
+                </div>
+                <div class="marquee" id="light-secondary">
+                    <div>
+                      <span>ABOUT</span>
+                      <span>ABOUT</span>
                     </div>
                 </div>
                 <div id="about-container">
@@ -86,6 +92,12 @@
                     <div>
                       <span>TECHNICAL SKILLS</span>
                       <span>TECHNICAL SKILLS</span>
+                    </div>
+                </div>
+                <div class="marquee" id="dark-secondary">
+                    <div>
+                      <span>SKILLS</span>
+                      <span>SKILLS</span>
                     </div>
                 </div>
                 <div class="skills-container">
@@ -145,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-1">
                         <img src="images/vscode-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">  
@@ -159,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-2">
                         <img src="images/html-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">
@@ -173,7 +185,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-3">
                         <img src="images/css-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">
@@ -187,7 +199,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-4">
                         <img src="images/javascript-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">
@@ -201,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-5">
                         <img src="images/instagram-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">
@@ -215,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-6">
                         <img src="images/linux-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">
@@ -229,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-7">
                         <img src="images/google-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">  
@@ -243,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="skill-item-all">
+                    <div class="skill-item-all" id="extra-skill-8">
                         <img src="images/photoshop-image.png" class="initial-image">
                         <div class="overlay">
                             <div class="skill-item">  
@@ -258,10 +270,18 @@
                         </div>
                     </div>
                 </div>
+                <a onclick="showSkills()" class="btn" id="skill-show-btn">Show all skills</a>
+                <a onclick="showLess()" class="btn" id="skill-less-btn">Show less skills</a>
                 <p id="hover-text">Hover over skill for more</p>
             </div>
             <div id="projects">
                 <div class="marquee" id="light-mq">
+                    <div>
+                      <span>PROJECTS</span>
+                      <span>PROJECTS</span>
+                    </div>
+                </div>
+                <div class="marquee" id="light-secondary">
                     <div>
                       <span>PROJECTS</span>
                       <span>PROJECTS</span>
@@ -282,7 +302,7 @@
                                 <div class="project-popout-paragraph">
                                     <p>Created @uibydivi on Instagram, a page dedicated to showcasing unique UI/UX concepts for mobile app designs/redesigns for an audience of over 3.5k. Created unique redesign mockups of popular mobile apps and other content using tools like Figma and Photoshop. The account has reached hundreds of thousands of people overtime.</p>
                                 </div>
-                                <div id="bottom-socials">
+                                <div class="bottom-social-bar" id="uibydivi-socials">
                                     <a href="https://instagram.com/uibydivi" target="_blank" class="bottom-socials-item">
                                         <img src="images/white-instagram.png" width="50%">
                                     </a>
@@ -399,7 +419,7 @@
                         <a onclick="underConstruction()" class="btn" id="resume-link">View resume</a>
                     </div>
                 </div>
-                <p id="hover-text">Scroll to the right for more</p>
+                <p id="scroll-text">Scroll to the right for more</p>
             </div>
             <div id="contact">
                 <div class="marquee" id="dark-mq">
@@ -408,13 +428,19 @@
                       <span>CONTACT ME</span>
                     </div>
                 </div>
+                <div class="marquee" id="dark-secondary">
+                    <div>
+                      <span>CONTACT</span>
+                      <span>CONTACT</span>
+                    </div>
+                </div>
                 <div id="contact-items">
                     <div id="contact-itm1">
                         <h2 id="message-text">Send me a message</h2>
                         <div id="email-link-container">
                             <a id="email-link" href="mailto:hello@divinewton.com" target="_blank">hello@divinewton.com</a>
                         </div>
-                        <div id="bottom-socials">
+                        <div class="bottom-social-bar" id="bottom-socials-edit">
                             <a href="https://www.linkedin.com/in/divinewton/" target="_blank" class="bottom-socials-item">
                                 <img src="images/white-linkedin.png">
                             </a>

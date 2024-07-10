@@ -52,3 +52,49 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+/* Skills Show All Button */
+function showSkills() {
+    var skill1 = document.getElementById("extra-skill-1");
+    skill1.style.display = "block";
+    var skill2 = document.getElementById("extra-skill-2");
+    skill2.style.display = "block";
+    var skill3 = document.getElementById("extra-skill-3");
+    skill3.style.display = "block";
+    var skill4 = document.getElementById("extra-skill-4");
+    skill4.style.display = "block";
+    var skill5 = document.getElementById("extra-skill-5");
+    skill5.style.display = "block";
+    var skill6 = document.getElementById("extra-skill-6");
+    skill6.style.display = "block";
+    var skill7 = document.getElementById("extra-skill-7");
+    skill7.style.display = "block";
+    var skill8 = document.getElementById("extra-skill-8");
+    skill8.style.display = "block";
+    var button = document.getElementById("skill-show-btn");
+    button.style.display = "none";
+    var button = document.getElementById("skill-less-btn");
+    button.style.display = "block";
+}
+function showLess() {
+    var skill1 = document.getElementById("extra-skill-1");
+    skill1.style.display = "none";
+    var skill2 = document.getElementById("extra-skill-2");
+    skill2.style.display = "none";
+    var skill3 = document.getElementById("extra-skill-3");
+    skill3.style.display = "none";
+    var skill4 = document.getElementById("extra-skill-4");
+    skill4.style.display = "none";
+    var skill5 = document.getElementById("extra-skill-5");
+    skill5.style.display = "none";
+    var skill6 = document.getElementById("extra-skill-6");
+    skill6.style.display = "none";
+    var skill7 = document.getElementById("extra-skill-7");
+    skill7.style.display = "none";
+    var skill8 = document.getElementById("extra-skill-8");
+    skill8.style.display = "none";
+    var button = document.getElementById("skill-show-btn");
+    button.style.display = "block";
+    var button = document.getElementById("skill-less-btn");
+    button.style.display = "none";
+}

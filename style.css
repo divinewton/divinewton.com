@@ -84,6 +84,18 @@ nav {
     background-clip: text;
 }
 
+@media only screen and (max-width: 768px) {
+    #linkedin-btn, #topnav a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #linkedin-btn {
+        display: none;
+    }
+}
+
 /* intro section and transition */
 #intro {
     display: flex;
@@ -137,17 +149,20 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+@media only screen and (max-width: 768px) {
+	#intro p {
+		display: none;
+	}
+}
 
 /* main content container */
 #main-content-container {
-    /* background: var(--background); */
     margin-top: 90vh;
 }
 
 /* about section */
 #about {
-    height: 100vh;
-    /* background-color: var(--secondary); */
+    height: auto;
     background: linear-gradient(var(--secondary), #1a2932);
     padding: 3%;
     overflow: hidden;
@@ -156,20 +171,10 @@ nav {
     width: 100%;
 }
 #about-container {
-    display: grid;
+    display: flex;
     gap: 50px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
     justify-content: center;
     align-content: center;
-}
-#about-image {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-#about-text {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
 }
 #about-pfp {
     width: 35dvw;
@@ -264,11 +269,30 @@ nav {
     transform: scale(1.1);
     background: none;
 }
+@media only screen and (max-width: 768px) {
+    #about-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #about-pfp {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    #about h1 {
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #about-pfp {
+        width: 25dvw;
+    }
+}
 
 /* skills section */
 #skills {
-    height: 100dvh;
-    /* background-color: var(--secondary); */
+    height: auto;
     background: linear-gradient(#1a2932, var(--secondary));
     padding: 3%;
     overflow: hidden;
@@ -282,10 +306,9 @@ nav {
     text-align: center;
 }
 .skills-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 60px 50px;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -324,8 +347,7 @@ nav {
 }
 .initial-image {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 250px;
 }
 .overlay {
     position: absolute;
@@ -344,11 +366,47 @@ nav {
 .skill-item-all:hover .overlay {
     opacity: 1;
 }
+#skill-show-btn, #skill-less-btn {
+    display: none;
+    width: 125px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (pointer: coarse) and (hover: none) {
+    .initial-image {
+        opacity: 0;
+    }
+    .overlay {
+        opacity: 1;
+    }
+    #hover-text {
+        display: none;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .initial-image {
+        width: 245px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .initial-image {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 601px) {
+    #skill-show-btn {
+        display: block;
+    }
+    #extra-skill-1, #extra-skill-2, #extra-skill-3, #extra-skill-4, #extra-skill-5, #extra-skill-6, #extra-skill-7, #extra-skill-8 {
+        display: none;
+    }
+}
 
 /* projects section */
 #projects {
-    height: 100dvh;
-    /* background-color: var(--secondary); */
+    height: auto;
     background: linear-gradient(var(--secondary), #1a2932);
 	padding: 3%;
     align-items: center;
@@ -371,7 +429,8 @@ nav {
 }
 .project-card {
     background: rgba(255, 255, 255, 0.10);
-    width: 35%;
+    width: 400px;
+    height: auto;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -437,6 +496,12 @@ nav {
     background-clip: text;
     transition: width 1s, height 1s, transform 1s;
 }
+#scroll-text {
+    font-weight: 400;
+    font-size: 90%;
+    opacity: 50%;
+    text-align: center;
+}
 .project-card h2:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -464,7 +529,7 @@ nav {
     top: 0;
     background-color: var(--background);
     background-color: rgba(9,10,17, 0.97);
-    overflow-y: hidden;
+    overflow-y: scroll;
     transition: 0.5s;
 }
 .project-popout-content {
@@ -485,21 +550,11 @@ nav {
     opacity: 50%;
 }
 .popout-container {
-    display: grid;
+    display: flex;
     gap: 50px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
     justify-content: center;
     align-content: center;
     margin: 50px;
-}
-.project-popout-image {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-.project-popout-text {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
 }
 .popout-pic {
     width: 35dvw;
@@ -560,6 +615,9 @@ nav {
     transform: scale(1.03);
     background: none;
 }
+.project-popout-text {
+    max-width: 50%;
+}
 .p-overlay-btn {
     color: var(--text);
     padding: 10px 20px;
@@ -582,15 +640,48 @@ nav {
     transform: scale(1.1);
     background: none;
 }
+@media (pointer: coarse) and (hover: none) {
+    .project-overlay {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .project-card {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .popout-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .popout-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .project-popout h1, .project-popout h2 {
+        text-align: center;
+    }
+    .project-popout-content {
+        top: 10%;
+    }
+    .project-popout-text {
+        max-width: 100%;
+    }
+    .p-overlay-btn, #uibydivi-socials {
+        margin-bottom: 20px;
+    }
+}
 
 /* contact section */
 #contact {
     padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
-    /* background-color: var(--secondary); */
     background: linear-gradient(#1a2932, var(--secondary));
-    height: 88dvh;
+    height: auto;
     border-bottom-left-radius: 75px;
     border-bottom-right-radius: 75px;
     overflow: hidden;
@@ -609,6 +700,7 @@ nav {
     justify-content: center;
     align-content: center;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 #contact-itm1 {
     grid-column: 1 / 3;
@@ -686,13 +778,35 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+@media only screen and (max-width: 768px) {
+    .bottom-link {
+        display: none;
+    }
+    #contact-itm1 {
+        grid-column: 1 / 5;
+        grid-row: 1 / 3;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    #email-link {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #bottom-socials-edit {
+        /* CENTER ITEM */
+    }
+    #contact {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+}
 
 /* footer */
 footer {
     text-align: center;
     padding: 1%;
     overflow: hidden;
-    /* background: var(--background); */
     color:rgba(234, 244, 237, 0.70);
 }
 
@@ -706,13 +820,14 @@ footer {
   font-weight: 650;
   opacity: 50%;
   margin-bottom: 50px;
+  margin-top: 10px;
 
   font-family: "Rubic", sans-serif;
   color: var(--primary);
   -webkit-text-fill-color: var(--secondary);
   -webkit-text-stroke: 3px var(--primary);
 }
-#dark-mq {
+#dark-mq, #dark-secondary {
     color: #1a2932;
     -webkit-text-fill-color: #1a2932;
 }
@@ -732,14 +847,37 @@ footer {
   0% { left: 0; }
   100% { left: -100%; }
 }
+#dark-secondary, #light-secondary {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #dark-mq, #light-mq {
+        display: none;
+    }
+    #dark-secondary, #light-secondary {
+        display: block;
+    }
+    .marquee {
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .marquee {
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .marquee {
+        font-size: 60px;
+    }
+}
 
 /* socials bars */
-#bottom-socials {
+.bottom-social-bar {
 	display: flex;
-	position: absolute;
 	width: 200px;
 	height: 60px;
-    padding-top: 1.5%;
+    padding-top: 20px;
 }
 .bottom-socials-item {
     display: flex;
