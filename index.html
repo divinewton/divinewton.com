@@ -8,7 +8,7 @@
         <meta name="author" content="Divi Newton">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch.png">
     </head>
     <body>
         <nav>
@@ -29,20 +29,24 @@
                 <a href="#projects" class="mobile-nav-link" onclick="closeMobileNav()">Projects</a>
                 <a onclick="underConstruction()" class="mobile-nav-link" onclick="closeMobileNav()">Resume</a>
                 <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">Contact</a>
-                <a href="https://www.linkedin.com/in/divinewton/" id="linkedin-btn-m" class="btn" target="_blank" onclick="closeMobileNav()">Connect on LinkedIn</a>
+                <div id="button-container-m">
+                    <a href="https://www.linkedin.com/in/divinewton/" id="linkedin-btn-m" class="btn" target="_blank" onclick="closeMobileNav()">Connect on LinkedIn</a>
+                </div>
+                <div class="blob" id="blob-mobile-nav-1"></div>
+                <div class="blob" id="blob-mobile-nav-2"></div>
             </div>
             <span id="mobile-top-btn" onclick="openMobileNav()">&#9776;</span>
         </nav>
         <div id="intro">
             <div id="intro-text">
-                <h1 style="font-size: 7rem;" id="text-first-h1" class="text-first">Hello, <span class="text-second">I'm Divi</span>
+                <h1 id="text-first-h1" class="text-first">Hello, <span class="text-second">I'm Divi</span>
                     <br>
                     <span class="text-third">UI/UX Designer</span>
                     <br>
                      and <span class="text-fourth">CS Student</span>
                 </h1>
                 <!--<img src="images/downarrow.png" id="down-arrow">-->
-                <p id="intro-paragraph" style="font-size: 1.5rem;padding-inline: 20%;">I bridge the gap between <strong>arts</strong> and <strong>sciences</strong> by combining <strong>technology</strong>, <strong>design</strong>, and <strong>knowlege</strong> of the <strong>world's challenges</strong>.</p>
+                <p id="intro-paragraph">I bridge the gap between <strong>arts</strong> and <strong>sciences</strong> by combining <strong>technology</strong>, <strong>design</strong>, and <strong>knowlege</strong> of the <strong>world's challenges</strong>.</p>
             </div>
             <div class="blob" id="blob-left"></div>
             <div class="blob" id="blob-right"></div>
@@ -447,19 +451,21 @@
                         <div id="email-link-container">
                             <a id="email-link" href="mailto:hello@divinewton.com" target="_blank">hello@divinewton.com</a>
                         </div>
-                        <div class="bottom-social-bar" id="bottom-socials-edit">
-                            <a href="https://www.linkedin.com/in/divinewton/" target="_blank" class="bottom-socials-item">
-                                <img src="images/white-linkedin.png">
-                            </a>
-                            <a href="https://github.com/divinewton" target="_blank" class="bottom-socials-item">
-                                <img src="images/white-github.png">
-                            </a>
-                            <a href="https://instagram.com/uibydivi" target="_blank" class="bottom-socials-item">
-                                <img src="images/white-instagram.png">
-                            </a>
-                            <a href="https://dribbble.com/uibydivi/" target="_blank" class="bottom-socials-item">
-                                <img src="images/white-dribbble.png">
-                            </a>
+                        <div id="socials-center-container">
+                            <div class="bottom-social-bar">
+                                <a href="https://www.linkedin.com/in/divinewton/" target="_blank" class="bottom-socials-item">
+                                    <img src="images/white-linkedin.png">
+                                </a>
+                                <a href="https://github.com/divinewton" target="_blank" class="bottom-socials-item">
+                                    <img src="images/white-github.png">
+                                </a>
+                                <a href="https://instagram.com/uibydivi" target="_blank" class="bottom-socials-item">
+                                    <img src="images/white-instagram.png">
+                                </a>
+                                <a href="https://dribbble.com/uibydivi/" target="_blank" class="bottom-socials-item">
+                                    <img src="images/white-dribbble.png">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div id="contact-itm2" class="bottom-link">
@@ -486,6 +492,9 @@
                             <p>Read my detailed resume of experiences</p>
                         </a>
                     </div>
+                </div>
+                <div id="bottom-nav-container">
+                    <a onclick="openMobileNav()" class="btn" id="bottom-nav-btn">Menu</a>
                 </div>
             </div>
         </div>
