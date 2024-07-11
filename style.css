@@ -906,12 +906,12 @@ footer {
     }
 }
 @media only screen and (max-width: 500px) {
-    .marquee {
+    .mobile-title {
         font-size: 70px;
     }
 }
 @media only screen and (max-width: 425px) {
-    .marquee {
+    .mobile-title {
         font-size: 60px;
     }
 }
