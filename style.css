@@ -340,11 +340,6 @@ nav {
         padding: 3% 2%;
     }
 }
-@media only screen and (max-width: 768px) {
-    #about {
-        padding: 3% 1%;
-    }
-}
 
 /* skills section */
 #skills {
@@ -463,11 +458,6 @@ nav {
 @media only screen and (max-width: 992px) {
     #skills {
         padding: 3% 2%;
-    }
-}
-@media only screen and (max-width: 768px) {
-    #skills {
-        padding: 3% 1%;
     }
 }
 
@@ -746,11 +736,6 @@ nav {
         padding: 3% 2%;
     }
 }
-@media only screen and (max-width: 768px) {
-    #projects {
-        padding: 3% 1%;
-    }
-}
 
 /* contact section */
 #contact {
@@ -881,11 +866,6 @@ nav {
 @media only screen and (max-width: 992px) {
     #contact {
         padding: 3% 2%;
-    }
-}
-@media only screen and (max-width: 768px) {
-    #contact {
-        padding: 3% 1%;
     }
 }
 
