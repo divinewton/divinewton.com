@@ -98,3 +98,11 @@ function showLess() {
     var button = document.getElementById("skill-less-btn");
     button.style.display = "none";
 }
+
+/* Mobile Nav Open/Close */
+function openMobileNav() {
+    document.getElementById("mobile-nav-overlay").style.width = "100%";
+}
+function closeMobileNav() {
+    document.getElementById("mobile-nav-overlay").style.width = "0";
+}

@@ -83,7 +83,6 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
 @media only screen and (max-width: 768px) {
     #linkedin-btn, #topnav a {
         display: none;
@@ -93,6 +92,56 @@ nav {
 @media only screen and (max-width: 900px) {
     #linkedin-btn {
         display: none;
+    }
+}
+
+/* mobile nav */
+#mobile-nav-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--background);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    align-content: center;
+    padding-top: 15px;
+}
+.mobile-nav-link {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text);
+    opacity: 75%;
+    display: block;
+    transition: 0.3s;
+}
+.mobile-nav-link:hover{
+    opacity: 100%;
+}
+.closemobilebtn {
+    color: var(--text);
+    opacity: 50%;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#mobile-top-btn {
+    display: none;
+    opacity: 75%;
+    font-size: 40px;
+    cursor: pointer
+}
+@media only screen and (max-width: 768px) {
+    #mobile-top-btn {
+        display: block;
     }
 }
 
@@ -373,6 +422,7 @@ nav {
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 @media (pointer: coarse) and (hover: none) {
     .initial-image {
