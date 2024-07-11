@@ -335,6 +335,16 @@ nav {
         width: 25dvw;
     }
 }
+@media only screen and (max-width: 992px) {
+    #about {
+        padding: 3% 2%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #about {
+        padding: 3% 1%;
+    }
+}
 
 /* skills section */
 #skills {
@@ -448,6 +458,16 @@ nav {
     }
     #extra-skill-1, #extra-skill-2, #extra-skill-3, #extra-skill-4, #extra-skill-5, #extra-skill-6, #extra-skill-7, #extra-skill-8 {
         display: none;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #skills {
+        padding: 3% 2%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #skills {
+        padding: 3% 1%;
     }
 }
 
@@ -721,6 +741,16 @@ nav {
         margin-bottom: 20px;
     }
 }
+@media only screen and (max-width: 992px) {
+    #projects {
+        padding: 3% 2%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #projects {
+        padding: 3% 1%;
+    }
+}
 
 /* contact section */
 #contact {
@@ -841,11 +871,21 @@ nav {
         margin-right: auto;
     }
     #bottom-socials-edit {
-        /* CENTER ITEM */
+        transform: translate(45%);
     }
     #contact {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #contact {
+        padding: 3% 2%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #contact {
+        padding: 3% 1%;
     }
 }
 
@@ -908,11 +948,15 @@ footer {
 @media only screen and (max-width: 500px) {
     .mobile-title {
         font-size: 70px;
+        margin-bottom: 30px;
     }
 }
 @media only screen and (max-width: 425px) {
     .mobile-title {
         font-size: 60px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        text-align: center;
     }
 }
 
