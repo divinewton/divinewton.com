@@ -138,15 +138,37 @@ nav {
     text-decoration: none;
     cursor: pointer;
 }
-#mobile-top-btn {
+#top-menu-container {
     display: none;
-    opacity: 75%;
-    font-size: 30px;
+    width: 50px;
     cursor: pointer
 }
+#top-menu-btn {
+    display: flex;
+    background: rgba(255, 255, 255, 0.10);
+	border-radius: 50%;
+	position: static;
+	width: 40px;
+	height: 40px;
+	margin-block: auto;
+	margin-inline: auto;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(255, 255, 255, 0.23);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.23) inset;
+}
+#top-menu-btn img {
+    opacity: 75%;
+    width: 65%;
+}
 @media only screen and (max-width: 768px) {
-    #mobile-top-btn {
-        display: block;
+    #top-menu-container {
+        display: flex;
     }
 }
 
@@ -362,6 +384,10 @@ nav {
     }
     #about h1 {
         text-align: center;
+    }
+    #location-container {
+        justify-content: center;
+        align-items: center;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -774,6 +800,11 @@ nav {
     .p-overlay-btn, #uibydivi-socials {
         margin-bottom: 20px;
     }
+    .overlay-projects-links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* contact section */
@@ -976,6 +1007,7 @@ footer {
     .mobile-title {
         font-size: 70px;
         margin-bottom: 30px;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 425px) {
@@ -983,7 +1015,6 @@ footer {
         font-size: 60px;
         margin-bottom: 10px;
         margin-top: 20px;
-        text-align: center;
     }
 }
 
