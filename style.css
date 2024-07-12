@@ -569,6 +569,7 @@ nav {
 .project-img {
     border-radius: 15px;
     width: 75%;
+    height: 75%;
     margin-top: 5%;
     transition: width 1s, height 1s, transform 1s;
 }
@@ -584,6 +585,7 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: width 1s, height 1s, transform 1s;
+    padding: 0% 3%;
 }
 #scroll-text {
     font-weight: 400;
@@ -729,9 +731,28 @@ nav {
     transform: scale(1.1);
     background: none;
 }
+.project-btn-mobile {
+    color: var(--text);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    background: var(--accent);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid rgba(255, 255, 255, 0.23);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.23) inset;
+    margin-bottom: 25px;
+    opacity: 75%;
+    cursor: pointer;
+    display: none;
+}
 @media (pointer: coarse) and (hover: none) {
     .project-overlay {
-        opacity: 1;
+        display: none;
+    }
+    .project-btn-mobile {
+        display: block;
     }
 }
 @media only screen and (max-width: 992px) {
