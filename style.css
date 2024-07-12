@@ -19,6 +19,8 @@ body {
     background-color: var(--background);
     color: var(--text);
     word-wrap: break-word;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* top nav */
@@ -367,11 +369,6 @@ nav {
         width: 25dvw;
     }
 }
-@media only screen and (max-width: 992px) {
-    #about {
-        padding: 3% 2%;
-    }
-}
 
 /* skills section */
 #skills {
@@ -487,11 +484,6 @@ nav {
         display: none;
     }
 }
-@media only screen and (max-width: 992px) {
-    #skills {
-        padding: 3% 2%;
-    }
-}
 
 /* projects section */
 #projects {
@@ -570,7 +562,6 @@ nav {
     border-radius: 15px;
     width: 75%;
     height: 75%;
-    margin-top: 5%;
     transition: width 1s, height 1s, transform 1s;
 }
 .project-img:hover {
@@ -743,7 +734,7 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.23);
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.23) inset;
     margin-bottom: 25px;
-    opacity: 75%;
+    opacity: 95%;
     cursor: pointer;
     display: none;
 }
@@ -782,11 +773,6 @@ nav {
     }
     .p-overlay-btn, #uibydivi-socials {
         margin-bottom: 20px;
-    }
-}
-@media only screen and (max-width: 992px) {
-    #projects {
-        padding: 3% 2%;
     }
 }
 
@@ -927,11 +913,6 @@ nav {
     }
     #contact-items {
         padding-bottom: 50px;
-    }
-}
-@media only screen and (max-width: 992px) {
-    #contact {
-        padding: 3% 2%;
     }
 }
 
