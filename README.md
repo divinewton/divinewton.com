@@ -8,7 +8,6 @@ Published through Vercel using GitHub.
 - Intro Section revamp
 - Resume page
 - Domain and email address
-- Profile image
 
 # Sources
 Colors: Realtime Colors (https://www.realtimecolors.com/?colors=eaf4ed-060b08-aad2b5-375568-757fb6&fonts=Inter-Inter)
