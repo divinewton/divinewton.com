@@ -97,6 +97,8 @@ function showLess() {
     button.style.display = "block";
     var button = document.getElementById("skill-less-btn");
     button.style.display = "none";
+    var scrollDiv = document.getElementById("skills-container").offsetTop;
+    window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
 }
 
 /* Mobile Nav Open/Close */
