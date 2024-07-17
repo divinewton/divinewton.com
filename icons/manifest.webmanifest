@@ -14,17 +14,7 @@
     "description": "Hello, I'm Divi. I bridge the gap between arts and sciences by combining technology, design, and knowlege of the world's challenges.",
     "screenshots": [
     {
-      "src": "https://www.divinewton.com/icons/mobile-screenshot.jpeg",
-      "type": "image/jpeg",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "https://www.divinewton.com/icons/desktop-screenshot.png",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "https://www.divinewton.com/icons/desktop-other.png",
+      "src": "https://www.divinewton.com/images/promo-img.png",
       "type": "image/png",
       "form_factor": "wide"
     }
