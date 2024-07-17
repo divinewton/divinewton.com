@@ -3,20 +3,5 @@
    <url>
       <loc>https://www.divinewton.com/</loc>
       <priority>1.0</priority>
-      <image:image>
-        <image:loc>https://divinewton.com/images/Headshot.jpg</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://divinewton.com/images/uibydivi.png</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://divinewton.com/images/personalsite.png</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://divinewton.com/images/gci.png</image:loc>
-      </image:image>
-      <image:image>
-        <image:loc>https://divinewton.com/images/applescoop.png</image:loc>
-      </image:image>
    </url>
 </urlset> 
