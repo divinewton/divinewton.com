@@ -2,8 +2,8 @@
     "name": "Divi Newton - UI/UX Designer and CS Student",
     "short_name": "Divi Newton",
     "icons": [
-      { "src": "icons/icon-192.png", "type": "image/png", "sizes": "192x192" },
-      { "src": "icons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+      { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+      { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
     ],
     "id": "/",
     "start_url": "/",
