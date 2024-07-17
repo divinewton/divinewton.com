@@ -7,8 +7,6 @@ Published to Spaceship domain through Vercel using GitHub.
 # Still to do
 - Intro Section revamp
 - Resume page
-- Browser theming and icons
-- User analytics/tracking
 
 # Sources
 - Colors: Realtime Colors (https://www.realtimecolors.com/?colors=eaf4ed-060b08-aad2b5-375568-757fb6&fonts=Inter-Inter)
