@@ -11,5 +11,19 @@
     "display": "standalone",
     "scope": "/",
     "theme_color": "#090a11",
-    "description": "Hello, I'm Divi. I bridge the gap between arts and sciences by combining technology, design, and knowlege of the world's challenges."
+    "description": "Hello, I'm Divi. I bridge the gap between arts and sciences by combining technology, design, and knowlege of the world's challenges.",
+    "screenshots": [
+    {
+      "src": "https://www.divinewton.com/icons/mobile-screenshot.jpeg",
+      "type": "image/jpeg",
+      "sizes": "2532x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "https://www.divinewton.com/icons/desktop-screenshot.png",
+      "type": "image/png",
+      "sizes": "1426x2428",
+      "form_factor": "wide"
+    }
+  ]
 }
