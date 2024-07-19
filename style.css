@@ -367,6 +367,11 @@ nav {
     transform: scale(1.1);
     background: none;
 }
+@media only screen and (max-width: 500px) {
+    .about-words {
+        font-size: 80%;
+    }
+}
 @media only screen and (max-width: 768px) {
     #about-container {
         flex-direction: column;
@@ -382,6 +387,10 @@ nav {
         text-align: center;
     }
     #location-container {
+        justify-content: center;
+        align-items: center;
+    }
+    #about-keywords {
         justify-content: center;
         align-items: center;
     }
