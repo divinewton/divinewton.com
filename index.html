@@ -29,6 +29,7 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBXGCNPB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <nav>
             <a id="titlename" href="https://www.divinewton.com">
+                <img src="icons/icon.svg" id="top-logo" alt="logo">
                 <h1>Divi Newton</h1>
             </a>
             <div id="topnav">
@@ -58,14 +59,41 @@
             </div>
         </nav>
         <div id="intro">
-            <div id="intro-text">
-                <h1 id="text-first-h1" class="text-first">Hello, <span class="text-second">I'm Divi</span>
-                    <br>
-                    <span class="text-third">UI/UX Designer</span>
-                    <br>
-                     and <span class="text-fourth">CS Student</span>
-                </h1>
-                <p id="intro-paragraph">I bridge the gap between <strong>arts</strong> and <strong>sciences</strong> by combining <strong>technology</strong>, <strong>design</strong>, and <strong>knowlege</strong> of the <strong>world's challenges</strong>.</p>
+            <div id="intro-container-top">
+                <div id="mobile-top-text">
+                    <h2>I'm Divi</h2>
+                </div>
+                <div id="intro-image">
+                    <img id="memoji-img" src="images/memoji.webp" alt="Divi Newton memoji">
+                    <!-- <div id="intro-socials-mobile">
+                        <div id="mobile-intro-socials">
+                            <a href="https://www.linkedin.com/in/divinewton/" target="_blank" class="mobile-intro-socials-itm">
+                                <img src="images/white-linkedin.webp"  width="50%" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/divinewton" target="_blank" class="mobile-intro-socials-itm">
+                                <img src="images/white-github.webp"  width="50%" alt="GitHub">
+                            </a>
+                            <a href="https://instagram.com/uibydivi" target="_blank" class="mobile-intro-socials-itm">
+                                <img src="images/white-instagram.webp"  width="50%" alt="Instagram">
+                            </a>
+                            <a href="https://dribbble.com/uibydivi/" target="_blank" class="mobile-intro-socials-itm">
+                                <img src="images/white-dribbble.webp"  width="50%" alt="Dribbble">
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="intro-btm-text">
+                    <h2 id="desktop-top-text"><span id="intro-hello">Hello, </span>I'm Divi</h2>
+                    <h3 id="intro-first-itm">UI/UX Designer</h3>
+                    <h3 id="intro-second-itm"><span id="intro-cs">CS </span>Student</h3>
+                    <!-- <div id="intro-buttons-desktop">
+                        <a href="#projects" class="btn">View Projects</a>
+                        <a onclick="underConstruction()" class="btn">Resume</a>
+                    </div> -->
+                </div>
+            </div>
+            <div id="down-arrow-intro" href="#about">
+                <img src="images/down-arrow.svg" alt="Scroll Down">
             </div>
             <div class="blob" id="blob-left"></div>
             <div class="blob" id="blob-right"></div>
@@ -138,7 +166,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/figmalogo.webp" alt="Figma logo">
+                                    <img src="images/figmalogo.webp" class="skill-img-default" alt="Figma logo">
+                                    <img src="images/Figma-image.webp" class="skill-img-mobile" alt="Figma logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Figma</h3>
@@ -152,7 +181,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/pythonlogo.webp" alt="Python logo">
+                                    <img src="images/pythonlogo.webp" class="skill-img-default" alt="Python logo">
+                                    <img src="images/python-image.webp" class="skill-img-mobile" alt="Python logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Python</h3>
@@ -166,7 +196,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/javalogo.webp" alt="java logo">
+                                    <img src="images/javalogo.webp" class="skill-img-default" alt="Java logo">
+                                    <img src="images/java-image.webp" class="skill-img-mobile" alt="Java logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Java</h3>
@@ -180,7 +211,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/githublogo.webp" alt="GitHub logo">
+                                    <img src="images/githublogo.webp" class="skill-img-default" alt="GitHub logo">
+                                    <img src="images/github-image.webp" class="skill-img-mobile" alt="GitHub logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>GitHub</h3>
@@ -194,7 +226,8 @@
                         <div class="overlay">
                             <div class="skill-item">  
                                 <div class="skill-image">
-                                    <img src="images/vscodelogo.webp" alt="VSCode logo">
+                                    <img src="images/vscodelogo.webp" class="skill-img-default" alt="VSCode logo">
+                                    <img src="images/vscode-image.webp" class="skill-img-mobile" alt="VSCode logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>VS Code</h3>
@@ -208,7 +241,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/htmllogo.webp" alt="HTML logo">
+                                    <img src="images/htmllogo.webp" class="skill-img-default" alt="HTML logo">
+                                    <img src="images/html-image.webp" class="skill-img-mobile" alt="HTML logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>HTML</h3>
@@ -222,7 +256,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/csslogo.webp" alt="CSS logo">
+                                    <img src="images/csslogo.webp" class="skill-img-default" alt="CSS logo">
+                                    <img src="images/css-image.webp" class="skill-img-mobile" alt="CSS logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>CSS</h3>
@@ -236,7 +271,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/javascriptlogo.webp" alt="JavaScript logo">
+                                    <img src="images/javascriptlogo.webp" class="skill-img-default" alt="JavaScript logo">
+                                    <img src="images/javascript-new.webp" class="skill-img-mobile" alt="JavaScript logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>JavaScript</h3>
@@ -250,7 +286,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/instagramlogo.webp" alt="Instagram logo">
+                                    <img src="images/instagramlogo.webp" class="skill-img-default" alt="Instagram logo">
+                                    <img src="images/instagram-image.webp" class="skill-img-mobile" alt="Instagram logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Social Media</h3>
@@ -264,7 +301,8 @@
                         <div class="overlay">
                             <div class="skill-item">
                                 <div class="skill-image">
-                                    <img src="images/linuxlogo.webp" alt="Linux logo">
+                                    <img src="images/linuxlogo.webp" class="skill-img-default" alt="Linux logo">
+                                    <img src="images/linux-image.webp" class="skill-img-mobile" alt="Linux logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Linux</h3>
@@ -278,7 +316,8 @@
                         <div class="overlay">
                             <div class="skill-item">  
                                 <div class="skill-image">
-                                    <img src="images/googlelogo.webp" alt="Google logo">
+                                    <img src="images/googlelogo.webp" class="skill-img-default" alt="Google logo">
+                                    <img src="images/google-image.webp" class="skill-img-mobile" alt="Google logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Google Workspace</h3>
@@ -292,7 +331,8 @@
                         <div class="overlay">
                             <div class="skill-item">  
                                 <div class="skill-image">
-                                    <img src="images/photoshoplogo.webp" alt="Photoshop logo">
+                                    <img src="images/photoshoplogo.webp" class="skill-img-default" alt="Photoshop logo">
+                                    <img src="images/photoshop-image.webp" class="skill-img-mobile" alt="Photoshop logo">
                                 </div>
                                 <div class="skill-text">
                                     <h3>Photoshop</h3>
@@ -328,7 +368,7 @@
                                 <img class="popout-pic" src="images/uibydivi.webp" alt="UI by Divi">
                             </div>
                             <div class="project-popout-text">
-                                <h1>UI by Divi <span class="project-year">(2021 - 2023)</span></h1>
+                                <h1>UI by Divi <span class="project-year"><br>(2021 - 2023)</span></h1>
                                 <h2>UI/UX Mobile Design Concepts and Social Media Growth</h2>
                                 <div class="project-popout-paragraph">
                                     <p>Created @uibydivi on Instagram, a page dedicated to showcasing unique UI/UX concepts for mobile app designs/redesigns for an audience of over 3.5k. Created unique redesign mockups of popular mobile apps and other content using tools like Figma and Photoshop. The account has reached hundreds of thousands of people overtime.</p>
@@ -363,7 +403,7 @@
                                 <img class="popout-pic" src="images/personalsite.webp" alt="Personal Site">
                             </div>
                             <div class="project-popout-text">
-                                <h1>Personal Website <span class="project-year">(2024 - current)</span></h1>
+                                <h1>Personal Website <span class="project-year"><br>(2024 - current)</span></h1>
                                 <h2>Design and Web Development in HTML, CSS, and JavaScript</h2>
                                 <div class="project-popout-paragraph">
                                     <p>Created this personal portfolio website from scratch using HTML, CSS, and JavaScript programming languages. Created initial design and entire codebase of over 1000 lines of code using self taught techniques in tools like Visual Studio Code and Figma. Site published using Vercel with GitHub used for code organization and synchronization.</p>
@@ -385,7 +425,7 @@
                                 <img class="popout-pic" src="images/applescoop.webp" alt="Apple Scoop">
                             </div>
                             <div class="project-popout-text">
-                                <h1>Apple Scoop <span class="project-year">(2021 - 2023)</span></h1>
+                                <h1>Apple Scoop <span class="project-year"><br>(2021 - 2023)</span></h1>
                                 <h2>Journalist and Editor for a Tech (Apple) News Website</h2>
                                 <div class="project-popout-paragraph">
                                     <p>Worked as a volunteer journalist and contributing editor at the online news blog Apple Scoop. Wrote, edited, and collaborated on news articles relating to technology and Apple Inc. Promoted to Editing role after 1.5 months, involving directly publishing to an online audience of hundreds of thousands.</p>
@@ -407,7 +447,7 @@
                                 <img class="popout-pic" src="images/gci.webp" alt="GCI">
                             </div>
                             <div class="project-popout-text">
-                                <h1>GCI: AIdentify Webgame <span class="project-year">(2024 - current)</span></h1>
+                                <h1>GCI: AIdentify Webgame <span class="project-year"><br>(2024 - current)</span></h1>
                                 <h2>Designing an Educational Webgame for AI Recognition</h2>
                                 <div class="project-popout-paragraph">
                                     <p>Worked in a team within Chapman University's Grand Challenges Initiative to create an informational web game that teaches users to recognize AI-generated media in the wild and differentiate it from authentic media. Researched different AI models and detection methods, as well as development processes.</p>
