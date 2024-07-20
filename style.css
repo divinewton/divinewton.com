@@ -23,7 +23,7 @@ body {
     margin-right: 0;
 }
 img {
-    background-color: transparent;
+    background: none;
 }
 
 /* top nav */
