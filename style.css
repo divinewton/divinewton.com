@@ -22,6 +22,9 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+img {
+    background-color: transparent;
+}
 
 /* top nav */
 nav {
@@ -369,6 +372,11 @@ nav {
 @media only screen and (max-width: 380px) {
     #memoji-img {
         height: 200px;
+        width: 200px;
+    }
+}
+@media only screen and (max-height: 680px) and (max-width: 400px) {
+    #memoji-img {
         width: 200px;
     }
 }
