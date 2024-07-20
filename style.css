@@ -76,14 +76,21 @@ nav {
     background: none;
 }
 #titlename {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: var(--text);
+    gap: 8px;
+}
+#top-logo {
+    width: 25px;
+}
+#titlename h1 {
+    opacity: 80%;
 }
 #titlename:hover {
-    background: linear-gradient(90deg, #aad2b5, #757fb6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    opacity: 70%;
 }
 @media only screen and (max-width: 768px) {
     #linkedin-btn, #topnav a {
@@ -183,73 +190,186 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    text-align: center;
     background: var(--background);
     box-sizing: border-box;
     width: 100%;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-#intro h1 {
-    font-size: 7rem;
-    font-weight: 700;
-    padding-left: 8%;
-    padding-right: 8%;
+#mobile-top-text {
+    display: none;
+}
+#intro-btm-text {
+    text-align: left;
     word-wrap: normal;
 }
-#intro p {
-    opacity: 75%;
-    font-size: 1.5rem;
-    padding-inline: 20%;
-}
-#intro p strong {
-    color: #cde5d4;
-}
-.text-first {
-    color: var(--text);
-}
-.text-second {
+#desktop-top-text {
+    font-size: 6.5rem;
+    font-weight: 700;
     font-family: "Rubic", sans-serif;
     color: var(--accent);
     -webkit-text-fill-color: var(--background);
     -webkit-text-stroke: 3.5px var(--accent);
+    margin: 0;
+    margin-bottom: 50px;
+    transform: translate(-120px, 0px);
 }
-.text-third {
+#intro-container-top {
+    display: flex;
+}
+#intro-first-itm {
+    font-weight: 650;
+    font-size: 5.5rem;
     background: linear-gradient(#aad2b5, #757fb6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
 }
-.text-fourth {
+#intro-second-itm {
+    font-weight: 650;
+    font-size: 5.5rem;
     background: linear-gradient(#757fb6, #aad2b5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
 }
-@media only screen and (max-width: 1000px) {
-    #intro h1 {
-        font-size: 6rem;
+#intro-buttons-desktop {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+#intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#memoji-img {
+    width: 400px;
+}
+#down-arrow-intro {
+    transform: translate(0px, 60px);
+    opacity: 75%;
+}
+#mobile-intro-socials {
+    display: flex;
+	width: 200px;
+	height: 60px;
+}
+.mobile-intro-socials-itm {
+    display: flex;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    position: static;
+    width: 40px;
+    height: 40px;
+    margin-block: auto;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(255, 255, 255, 0.23);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.23) inset;
+}
+#mobile-intro-socials img {
+    opacity: 75%;
+}
+#intro-socials-mobile {
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    #intro-container-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile-top-text {
+        display: flex;
+    }
+    #mobile-top-text h2{
+        font-size: 5.5rem;
+        font-weight: 700;
+        font-family: "Rubic", sans-serif;
+        color: var(--accent);
+        -webkit-text-fill-color: var(--background);
+        -webkit-text-stroke: 3.5px var(--accent);
+        margin: 0;
+    }
+    #desktop-top-text, #intro-buttons-desktop {
+        display: none;
+    }
+    #intro-btm-text {
+        text-align: center;
+    }
+    #down-arrow-intro {
+        transform: translate(0px, 0px);
+        opacity: 75%;
+    }
+    #memoji-img {
+        width: 300px;
+    }
+    #intro-btm-text h3 {
+        font-size: 4.5rem;
+    }
+    #intro-socials-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
-@media only screen and (max-width: 850px) {
-    #intro p {
-		display: none;
-	}
-}
-@media only screen and (max-width: 768px) {
-    #intro h1 {
+@media only screen and (max-width: 790px) {
+    #intro-first-itm, #intro-second-itm {
         font-size: 5rem;
     }
 }
-@media only screen and (max-width: 415px) {
-    #intro h1 {
-        font-size: 4.5rem;
+@media only screen and (max-width: 930px) {
+    #intro-cs {
+        display: none;
     }
 }
-@media only screen and (max-height: 650px) {
-    #intro h1 {
-        font-size: 6rem;
+@media only screen and (max-width: 1125px) {
+    #intro-hello {
+        display: none;
     }
-    #intro p {
-        font-size: 1rem;
+}
+@media only screen and (min-width: 1240px) {
+    #intro-btm-text h3 {
+        font-size: 6.5rem;
+    }
+    #desktop-top-text {
+        font-size: 7.5rem;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    #intro-btm-text h3 {
+        font-size: 7.5rem;
+    }
+    #desktop-top-text {
+        font-size: 8.5rem;
+    }
+    #memoji-img {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #mobile-top-text h2 {
+        font-size: 4.5rem;
+    }
+    #intro-btm-text h3 {
+        font-size: 3.5rem;
+    }
+}
+@media only screen and (max-width: 380px) {
+    #memoji-img {
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -486,6 +606,16 @@ nav {
     margin-right: auto;
     cursor: pointer;
 }
+.skill-img-default {
+    display: flex;
+}
+.skill-img-mobile {
+    display: none;
+    width: 20%; 
+    height: 40%; 
+    object-fit: cover; 
+    object-position: 50% 0;
+}
 @media (pointer: coarse) and (hover: none) {
     .initial-image {
         opacity: 0;
@@ -495,6 +625,12 @@ nav {
     }
     #hover-text {
         display: none;
+    }
+    .skill-img-default {
+        display: none;
+    }
+    .skill-img-mobile {
+        display: flex;
     }
 }
 @media only screen and (min-width: 1000px) {
