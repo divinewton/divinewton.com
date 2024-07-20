@@ -41,13 +41,13 @@ window.onscroll = function() {
   var currentScrollPos = window.scrollY;
   if (prevScrollpos > currentScrollPos) {
     if (currentScrollPos <1000) {
-        document.getElementById("text-first-h1").style.opacity = "100%";
-        document.getElementById("intro-paragraph").style.opacity = "75%";
+        document.getElementById("intro-container-top").style.opacity = "100%";
+        document.getElementById("down-arrow-intro").style.opacity = "75%";
     }
   } else {
     if (currentScrollPos > 1000) {
-        document.getElementById("text-first-h1").style.opacity = "0";
-        document.getElementById("intro-paragraph").style.opacity = "0";
+        document.getElementById("intro-container-top").style.opacity = "0";
+        document.getElementById("down-arrow-intro").style.opacity = "0";
     }
   }
   prevScrollpos = currentScrollPos;
