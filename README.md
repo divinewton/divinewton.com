@@ -2,10 +2,10 @@
 This is the full codebase for the official website of Divi Newton, accessible at https://www.divinewton.com/. 
 See all files and images here.
 
-Domain - Spaceship
-Hosting - Vercel
-Source Management - GitHub
-Analytics: Google
+- Domain: Spaceship
+- Hosting: Vercel
+- Source Management: GitHub
+- Analytics: Google
 
 # Still to do
 - Fix intro links and socials
