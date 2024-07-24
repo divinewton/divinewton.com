@@ -244,6 +244,9 @@ nav {
     gap: 15px;
     padding-top: 10px;
 }
+#resume-btn-top:hover {
+    cursor: pointer;
+}
 #intro-image {
     display: flex;
     justify-content: center;
@@ -256,6 +259,9 @@ nav {
 #down-arrow-intro {
     transform: translate(0px, 60px);
     opacity: 75%;
+}
+#down-arrow-intro:hover {
+    opacity: 50%;
 }
 #mobile-intro-socials {
     display: flex;
@@ -383,7 +389,9 @@ nav {
 
 /* main content container */
 #main-content-container {
-    margin-top: 90vh;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
 }
 
 /* about section */
@@ -1101,7 +1109,12 @@ footer {
     text-align: center;
     padding: 1%;
     overflow: hidden;
-    color:rgba(234, 244, 237, 0.70);
+    color: var(--text);
+    opacity: 75%;
+}
+#author-footer a {
+    text-decoration: none;
+    color: var(--text);
 }
 
 /* marquee intros for section titles */
