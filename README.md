@@ -8,7 +8,6 @@ Source Management - GitHub
 Analytics: Google
 
 # Still to do
-- Fix intro links and socials
 - Resume page
 
 # Sources
