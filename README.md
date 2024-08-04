@@ -7,9 +7,6 @@ See all files and images here.
 - Source Management: GitHub
 - Analytics: Google
 
-# Still to do
-- Resume page
-
-# Sources
+# Resources
 - Colors: Realtime Colors (https://www.realtimecolors.com/?colors=eaf4ed-060b08-aad2b5-375568-757fb6&fonts=Inter-Inter)
 - Fonts and Icons: Google Fonts (https://fonts.google.com/)
