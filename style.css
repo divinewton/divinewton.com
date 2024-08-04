@@ -244,9 +244,6 @@ nav {
     gap: 15px;
     padding-top: 10px;
 }
-#resume-btn-top:hover {
-    cursor: pointer;
-}
 #intro-image {
     display: flex;
     justify-content: center;
@@ -781,9 +778,6 @@ nav {
 #resume-img {
     width: 50px;
     opacity: 75%;
-}
-#resume-link:hover {
-    cursor: pointer;
 }
 .project-popout {
     height: 0;
