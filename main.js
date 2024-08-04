@@ -30,11 +30,6 @@ function closeGci() {
     document.getElementById("gci-popout").style.height = "0%";
 }
 
-/* Under Construction Alert */
-function underConstruction() {
-    alert("Resume page is currently under construction.\nPlease check back later!");
-}
-
 /* Scrolling Text Opacity */
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
