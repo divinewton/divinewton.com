@@ -681,11 +681,15 @@ nav {
     gap: 25px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    &::-webkit-scrollbar {
-        display: none;
-    }
     .project-card {
       flex: 0 0 auto;
+    }
+    padding-bottom: 20px;
+    scrollbar-color: #445b69 rgba(0, 0, 0, 0);
+}
+@media only screen and (pointer: coarse) and (hover: none){
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 .project-card {
