@@ -919,6 +919,11 @@ nav {
     cursor: pointer;
     display: none;
 }
+.overlay-projects-links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 @media (pointer: coarse) and (hover: none) {
     .project-overlay {
         display: none;
@@ -952,11 +957,10 @@ nav {
     .project-popout-text {
         max-width: 100%;
     }
-    .p-overlay-btn, #uibydivi-socials {
+    .p-overlay-btn, #uibydivi-socials, .other-social-bar {
         margin-bottom: 20px;
     }
     .overlay-projects-links-container {
-        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -1184,6 +1188,14 @@ footer {
 	width: 200px;
 	height: 60px;
     padding-top: 20px;
+}
+.other-social-bar {
+	display: flex;
+	width: 50px;
+    margin-top: 25px;
+}
+#gci-social-bar {
+	width: 100px;
 }
 .bottom-socials-item {
     display: flex;

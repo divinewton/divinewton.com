@@ -30,6 +30,22 @@ function closeGci() {
     document.getElementById("gci-popout").style.height = "0%";
 }
 
+/* Data Structures Popup */
+function openDS() {
+    document.getElementById("data-structures-popout").style.height = "100%";
+}
+function closeDS() {
+    document.getElementById("data-structures-popout").style.height = "0%";
+}
+
+/* Writing Popup */
+function openWriting() {
+    document.getElementById("writing-popout").style.height = "100%";
+}
+function closeWriting() {
+    document.getElementById("writing-popout").style.height = "0%";
+}
+
 /* Scrolling Text Opacity */
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
