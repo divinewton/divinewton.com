@@ -1,5 +1,7 @@
-# About this Project
-This is the full codebase for the official website of Divi Newton, accessible at https://www.divinewton.com/. 
+# divinewton.com
+
+## About this Project
+This is the full codebase for the official website of Divi Newton, accessible at https://www.divinewton.com/.
 See all files and images here.
 
 - Domain: Spaceship
@@ -7,6 +9,6 @@ See all files and images here.
 - Source Management: GitHub
 - Analytics: Google
 
-# Resources
-- Colors: Realtime Colors (https://www.realtimecolors.com/?colors=eaf4ed-060b08-aad2b5-375568-757fb6&fonts=Inter-Inter)
-- Fonts and Icons: Google Fonts (https://fonts.google.com/)
+## Resources
+- Colors: [Realtime Colors](https://www.realtimecolors.com/?colors=eaf4ed-060b08-aad2b5-375568-757fb6&fonts=Inter-Inter)
+- Fonts and Icons: [Google Fonts](https://fonts.google.com/)
