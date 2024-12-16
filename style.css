@@ -679,7 +679,7 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     gap: 25px;
-    overflow-x: auto;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     .project-card {
       flex: 0 0 auto;
