@@ -679,20 +679,28 @@ nav {
     display: flex;
     flex-wrap: nowrap;
     gap: 25px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    .project-card {
-      flex: 0 0 auto;
-    }
+    overflow-x: scroll;
     padding-bottom: 20px;
-    scrollbar-color: #445b69 rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
 }
-@media only screen and (pointer: coarse) and (hover: none){
-    &::-webkit-scrollbar {
-        display: none;
-    }
+
+.scrolling-wrapper::-webkit-scrollbar {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 }
+
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+    background-color: #5c6493;
+    border-radius: 20px;
+}
+
+.scrolling-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent);
+}
+
 .project-card {
+    flex: 0 0 auto;
     background: rgba(255, 255, 255, 0.10);
     width: 400px;
     height: auto;
