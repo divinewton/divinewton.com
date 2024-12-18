@@ -310,6 +310,7 @@ nav {
     margin-top: 3%;
 }
 .images {
+    display: block;
     transition: width 1s, height 1s, transform 1s;
 }
 .images:hover {
