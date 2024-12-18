@@ -12,6 +12,7 @@ function showAll() {
     elements.forEach(element => {
         element.style.display = "block";
     });
+    buttonAll();
 }
 
 /* User Interface Button */
@@ -22,6 +23,7 @@ function showUI() {
     });
     hideVisual();
     hidePhysical();
+    buttonUI();
 }
 function hideUI() {
     const elements = document.querySelectorAll("[id^='ui-img']");
@@ -38,6 +40,7 @@ function showVisual() {
     });
     hideUI();
     hidePhysical();
+    buttonVisual();
 }
 function hideVisual() {
     const elements = document.querySelectorAll("[id^='visual-img']");
@@ -54,10 +57,37 @@ function showPhysical() {
     });
     hideUI();
     hideVisual();
+    buttonPhysical();
 }
 function hidePhysical() {
     const elements = document.querySelectorAll("[id^='physical-img']");
     elements.forEach(element => {
         element.style.display = "none";
     });
+}
+
+/* Button Colors */
+function buttonAll() {
+    document.getElementById("all-word").style.background = "rgba(117, 127, 182, 0.45)";
+    document.getElementById("ui-word").style.background = "none";
+    document.getElementById("visual-word").style.background = "none";
+    document.getElementById("physical-word").style.background = "none";
+}
+function buttonUI() {
+    document.getElementById("all-word").style.background = "none";
+    document.getElementById("ui-word").style.background = "rgba(117, 127, 182, 0.45)";
+    document.getElementById("visual-word").style.background = "none";
+    document.getElementById("physical-word").style.background = "none";
+}
+function buttonVisual() {
+    document.getElementById("all-word").style.background = "none";
+    document.getElementById("ui-word").style.background = "none";
+    document.getElementById("visual-word").style.background = "rgba(117, 127, 182, 0.45)";
+    document.getElementById("physical-word").style.background = "none";
+}
+function buttonPhysical() {
+    document.getElementById("all-word").style.background = "none";
+    document.getElementById("ui-word").style.background = "none";
+    document.getElementById("visual-word").style.background = "none";
+    document.getElementById("physical-word").style.background = "rgba(117, 127, 182, 0.45)";
 }

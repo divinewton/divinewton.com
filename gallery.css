@@ -236,7 +236,6 @@ nav {
 #main-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -245,6 +244,7 @@ nav {
     margin-top: 5px;
     background: linear-gradient(var(--secondary), #1a2932);
     height: auto;
+    min-height: 100vh;
     border-top-left-radius: 75px;
     border-top-right-radius: 75px;
     border-bottom-left-radius: 75px;
@@ -283,14 +283,13 @@ nav {
     transition: width 1s, height 1s, transform 1s;
 }
 #all-word {
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(117, 127, 182, 0.45);
 }
 #ui-word, #visual-word, #physical-word {
     background: none;
 }
 #all-word:hover, #ui-word:hover, #visual-word:hover, #physical-word:hover {
     transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.10);
     cursor: pointer;
 }
 #sorting a {
