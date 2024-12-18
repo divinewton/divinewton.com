@@ -285,10 +285,10 @@ nav {
 #all-word {
     background: rgba(117, 127, 182, 0.45);
 }
-#ui-word, #visual-word, #physical-word {
+#ui-word, #visual-word {
     background: none;
 }
-#all-word:hover, #ui-word:hover, #visual-word:hover, #physical-word:hover {
+#all-word:hover, #ui-word:hover, #visual-word:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -389,14 +389,14 @@ nav {
     }
 }
 @media only screen and (max-width: 610px) {
-    .sorting-words {
-        font-size: 80%;
-    }
     #sorting {
         gap: 20px;
     }
 }
 @media only screen and (max-width: 540px) {
+    .sorting-words {
+        font-size: 80%;
+    }
     #sorting {
         gap: 15px;
         margin-bottom: 25px;
