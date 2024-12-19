@@ -38,7 +38,7 @@ nav {
     display: flex;
     gap: 50px;
 }
-#topnav a {
+#about-top-nav, #skills-top-nav, #projects-top-nav, #contact-top-nav {
     text-decoration: none;
     color: var(--text);
     opacity: 90%;
@@ -56,6 +56,11 @@ nav {
     width: 100%;
 }
 #topnav a:hover {
+    color: var(--accent);
+    opacity: 100%;
+}
+#gallery-top-nav {
+    text-decoration: none;
     color: var(--accent);
     opacity: 100%;
 }
