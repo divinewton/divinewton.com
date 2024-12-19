@@ -286,6 +286,7 @@ nav {
     text-align: center;
     padding: 10px 20px;
     transition: width 1s, height 1s, transform 1s;
+    text-decoration: none;
 }
 #all-word {
     background: rgba(117, 127, 182, 0.45);
