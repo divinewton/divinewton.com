@@ -4,6 +4,7 @@
 This is the full codebase for the official website of Divi Newton, accessible at https://www.divinewton.com. Personal portfolio website, made from scratch using HTML, CSS, and JavaScript. See all files and images here.
 
 ## Recent Updates
+- Added new Gallery page with UI designs and visual art projects
 - Added recently acquired skills
 - Updated with recent projects
 
