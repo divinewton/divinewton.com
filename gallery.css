@@ -324,6 +324,20 @@ nav {
     border-radius: 25px;
     height: 350px;
 }
+#content-security {
+    font-weight: 400;
+    font-size: 90%;
+    opacity: 50%;
+    color: var(--text);
+    text-align: center;
+    margin-top: 25px;
+}
+#content-security a {
+    color: var(--text);
+}
+#content-security a:hover {
+    opacity: 80%;
+}
 #go-to-projects {
     display: flex;
     flex-direction: column;
@@ -338,7 +352,7 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.23);
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.23) inset;
     padding: 20px 25px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 #go-to-projects h3 {
     font-weight: 400;
@@ -379,6 +393,11 @@ nav {
 @media only screen and (max-width: 430px) {
     .images img {
         height: 300px;
+    }
+}
+@media only screen and (min-width: 1850px) {
+    .images img {
+        height: 400px;
     }
 }
 @media only screen and (max-width: 768px) {
