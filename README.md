@@ -7,6 +7,7 @@ This is the full codebase for the official website of Divi Newton, accessible at
 - Added new Gallery page with UI designs and visual art projects
 - Added recently acquired skills
 - Updated with recent projects
+- Added 404 error page
 
 ## Resources
 - Domain: Spaceship
