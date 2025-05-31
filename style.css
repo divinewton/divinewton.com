@@ -552,7 +552,7 @@ nav {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px 50px;
+    gap: 40px 40px;
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -651,7 +651,7 @@ nav {
         width: 245px;
     }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1410px) {
     .initial-image {
         width: 300px;
     }
@@ -660,7 +660,7 @@ nav {
     #skill-show-btn {
         display: block;
     }
-    #extra-skill-1, #extra-skill-2, #extra-skill-3, #extra-skill-4, #extra-skill-5, #extra-skill-6, #extra-skill-7, #extra-skill-8 {
+    #extra-skill-1, #extra-skill-2, #extra-skill-3, #extra-skill-4, #extra-skill-5, #extra-skill-6, #extra-skill-7, #extra-skill-8, #extra-skill-9, #extra-skill-10, #extra-skill-11, #extra-skill-12 {
         display: none;
     }
 }
