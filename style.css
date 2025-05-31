@@ -753,7 +753,7 @@ nav {
 .project-img {
     border-radius: 15px;
     width: 75%;
-    height: 75%;
+    /* height: 75%; */
     transition: width 1s, height 1s, transform 1s;
 }
 .project-img:hover {
