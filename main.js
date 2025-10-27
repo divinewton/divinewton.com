@@ -6,6 +6,14 @@ function closeUibydivi() {
     document.getElementById("uibydivi-popout").style.height = "0%";
 }
 
+/* Cloudr Popup */
+function openCloudr() {
+    document.getElementById("cloudr-popout").style.height = "100%";
+}
+function closeCloudr() {
+    document.getElementById("cloudr-popout").style.height = "0%";
+}
+
 /* personal Popup */
 function openPersonalsite() {
     document.getElementById("personalsite-popout").style.height = "100%";

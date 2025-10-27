@@ -426,6 +426,28 @@
                       <span>PROJECTS</span>
                     </div>
                 </div>
+                <div id="cloudr-popout" class="project-popout">
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeCloudr()">&times;</a>
+                    <!-- Overlay content -->
+                    <div class="project-popout-content">
+                        <div class="popout-container">
+                            <div class="project-popout-image">
+                                <img class="popout-pic" src="images/cloudr.webp" alt="Cloudr">
+                            </div>
+                            <div class="project-popout-text">
+                                <h1>Cloudr <span class="project-year"><br>(2025 - current)</span></h1>
+                                <h2>Save Ideas, Notes, Reminders, and Events Easily Through an Intuitive iOS APP</h2>
+                                <div class="project-popout-paragraph">
+                                    <p>Cloudr, your thought cloud companion. Save ideas, notes, reminders, and events easily through a sleek and intuitive chat experience. Created at Cal Hacks 12.0 Hackathon, Cloudr lets users input ideas via text, voice, or camera, and uses Anthropic's Claude Haiku 4.5 to automatically group them into sections by type. Desgined logo and informational material and contributed to SwiftUI layout, entry editing, and implementing Liquid Glass UI elements.</p>
+                                </div>
+                                <div class="overlay-projects-links-container">
+                                    <a href="https://devpost.com/software/cloudr" target="_blank" class="p-overlay-btn">Devpost Submission</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="uibydivi-popout" class="project-popout">
                     <!-- Button to close the overlay navigation -->
                     <a href="javascript:void(0)" class="closebtn" onclick="closeUibydivi()">&times;</a>
@@ -593,6 +615,15 @@
                     </div>
                 </div>
                 <div class="scrolling-wrapper">
+                    <div class="project-card">
+                        <img src="images/cloudr.webp" class="project-img" alt="Cloudr">
+                        <h2 onclick="openCloudr()">Cloudr</h2>
+                        <h3>An iOS App using AI to Easily Save Ideas, Notes, Reminders, and Events</h3>
+                        <a onclick="openCloudr()" class="project-btn-mobile">See more</a>
+                        <div class="project-overlay">
+                            <a onclick="openCloudr()" class="project-btn">See more</a>
+                        </div>
+                    </div>
                     <div class="project-card">
                         <img src="images/gci.webp" class="project-img" alt="GCI">
                         <h2 onclick="openGci()">AIdentify</h2>
