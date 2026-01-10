@@ -448,6 +448,28 @@
                         </div>
                     </div>
                 </div>
+                <div id="tripbook-popout" class="project-popout">
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeTripBook()">&times;</a>
+                    <!-- Overlay content -->
+                    <div class="project-popout-content">
+                        <div class="popout-container">
+                            <div class="project-popout-image">
+                                <img class="popout-pic" src="images/tripbook.webp" alt="TripBook">
+                            </div>
+                            <div class="project-popout-text">
+                                <h1>TripBook <span class="project-year"><br>(2025 - current)</span></h1>
+                                <h2>Map your Memories and Track your Global Progress Through a Simple iOS App</h2>
+                                <div class="project-popout-paragraph">
+                                    <p>TripBook is an iOS app to map your memories and track your global progress. TripBook allows users to log their trips and track their global travel statistics in a simple and easy-to-use interface optimized for Liquid Glass on iOS 26. Created for iOS Development course at Chapman University, this app uses SwiftUI, MapKit, and SwiftData to store content on-device and display information in a beautiful native interface. Designed and created from scratch by Divi Newton.</p>
+                                </div>
+                                <!-- <div class="overlay-projects-links-container">
+                                    <a href="https://devpost.com/software/cloudr" target="_blank" class="p-overlay-btn">Devpost Submission</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="uibydivi-popout" class="project-popout">
                     <!-- Button to close the overlay navigation -->
                     <a href="javascript:void(0)" class="closebtn" onclick="closeUibydivi()">&times;</a>
@@ -615,6 +637,15 @@
                     </div>
                 </div>
                 <div class="scrolling-wrapper">
+                    <div class="project-card">
+                        <img src="images/tripbook.webp" class="project-img" alt="TripBook">
+                        <h2 onclick="openTripBook()">TripBook</h2>
+                        <h3>An iOS App to Map your Memories and Track your Global Progress</h3>
+                        <a onclick="openTripBook()" class="project-btn-mobile">See more</a>
+                        <div class="project-overlay">
+                            <a onclick="openTripBook()" class="project-btn">See more</a>
+                        </div>
+                    </div>
                     <div class="project-card">
                         <img src="images/cloudr.webp" class="project-img" alt="Cloudr">
                         <h2 onclick="openCloudr()">Cloudr</h2>

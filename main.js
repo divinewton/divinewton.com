@@ -14,6 +14,14 @@ function closeCloudr() {
     document.getElementById("cloudr-popout").style.height = "0%";
 }
 
+/* TripBook Popup */
+function openTripBook() {
+    document.getElementById("tripbook-popout").style.height = "100%";
+}
+function closeTripBook() {
+    document.getElementById("tripbook-popout").style.height = "0%";
+}
+
 /* personal Popup */
 function openPersonalsite() {
     document.getElementById("personalsite-popout").style.height = "100%";
