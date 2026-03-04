@@ -101,7 +101,7 @@ nav {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
     #linkedin-btn {
         display: none;
     }
@@ -206,6 +206,7 @@ nav {
 #intro-btm-text {
     text-align: left;
     word-wrap: normal;
+    margin-bottom: 30px;
 }
 #desktop-top-text {
     font-size: 6.5rem;
@@ -223,7 +224,7 @@ nav {
 }
 #intro-first-itm {
     font-weight: 650;
-    font-size: 5.5rem;
+    font-size: 5rem;
     background: linear-gradient(#aad2b5, #757fb6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -231,13 +232,14 @@ nav {
     margin: 0;
 }
 #intro-second-itm {
-    font-weight: 650;
-    font-size: 5.5rem;
-    background: linear-gradient(#757fb6, #aad2b5);
+    font-weight: 550;
+    font-size: 2.75rem;
+    background: linear-gradient(#757fb6, #a7afdc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin: 0;
+    margin-bottom: 20px;
 }
 #intro-buttons-desktop {
     display: flex;
@@ -321,8 +323,11 @@ nav {
     #memoji-img {
         width: 300px;
     }
-    #intro-btm-text h3 {
-        font-size: 4.5rem;
+    #intro-first-itm {
+        font-size: 4rem;
+    }
+    #intro-second-itm {
+        font-size: 2.75rem;
     }
     #intro-socials-mobile {
         display: flex;
@@ -331,13 +336,11 @@ nav {
     }
 }
 @media only screen and (max-width: 790px) {
-    #intro-first-itm, #intro-second-itm {
-        font-size: 5rem;
+    #intro-first-itm {
+        font-size: 4.5rem;
     }
-}
-@media only screen and (max-width: 930px) {
-    #intro-cs {
-        display: none;
+    #intro-second-itm {
+        font-size: 2.25rem;
     }
 }
 @media only screen and (max-width: 1125px) {
@@ -346,16 +349,22 @@ nav {
     }
 }
 @media only screen and (min-width: 1240px) {
-    #intro-btm-text h3 {
-        font-size: 6.5rem;
+    #intro-first-itm {
+        font-size: 6rem;
+    }
+    #intro-second-itm {
+        font-size: 3.75rem;
     }
     #desktop-top-text {
         font-size: 7.5rem;
     }
 }
-@media only screen and (min-width: 1400px) {
-    #intro-btm-text h3 {
-        font-size: 7.5rem;
+@media only screen and (min-width: 1450px) {
+    #intro-first-itm {
+        font-size: 7rem;
+    }
+    #intro-second-itm {
+        font-size: 4.75rem;
     }
     #desktop-top-text {
         font-size: 8.5rem;
@@ -368,8 +377,11 @@ nav {
     #mobile-top-text h2 {
         font-size: 4.5rem;
     }
-    #intro-btm-text h3 {
-        font-size: 3.5rem;
+    #intro-first-itm {
+        font-size: 3rem;
+    }
+    #intro-second-itm {
+        font-size: 1.75rem;
     }
 }
 @media only screen and (max-width: 380px) {
