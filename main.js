@@ -22,6 +22,14 @@ function closeTripBook() {
     document.getElementById("tripbook-popout").style.height = "0%";
 }
 
+/* CoolCraig Popup */
+function openCoolCraig() {
+    document.getElementById("coolcraig-popout").style.height = "100%";
+}
+function closeCoolCraig() {
+    document.getElementById("coolcraig-popout").style.height = "0%";
+}
+
 /* personal Popup */
 function openPersonalsite() {
     document.getElementById("personalsite-popout").style.height = "100%";

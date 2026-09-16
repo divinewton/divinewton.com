@@ -841,11 +841,11 @@ nav {
 }
 .popout-pic {
     width: 35dvw;
-    border-radius: 25px;
+    /* border-radius: 25px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 0.5px solid rgba(255, 255, 255, 0.23);
     border: 1px solid rgba(255, 255, 255, 0.23);
-    box-shadow: 0 0 3px rgba(255, 255, 255, 0.23) inset;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.23) inset; */
     transition: width 1s, height 1s, transform 1s;
     overflow: hidden;
 }
